@@ -53,8 +53,6 @@ def load_langgraph_agenticai_app():
             if not graph_instance:
                 st.error("Failed to setup the graph. Please check the use case configuration.")
                 return
-            """
-            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"""
 
         except ValueError as e:
             st.error(f"Error initializing LLM: {e}")
