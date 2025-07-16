@@ -13,7 +13,7 @@ class UIConfigFile:
         return self.config.get('DEFAULT', 'LLM_OPTIONS', fallback='Groq').split(',')
 
     def get_use_case_options(self):
-        return self.config.get('DEFAULT', 'USE_CASE_OPTIONS', fallback='Basic Chatabot, Chatbot with tool, AI News, Blog Generator').split(',')
+        return self.config.get('DEFAULT', 'USE_CASE_OPTIONS', fallback='Basic Chatbot, Chatbot with tool, AI News, Blog Generator').split(',')
 
     def get_groq_model(self):
         return self.config.get('DEFAULT', 'GROQ_MODEL', fallback='llama3-70b-8192, llama3-8b-8192').split(',')
